@@ -1,0 +1,20 @@
+Filter by extension
+*.[extension], eg: *.log to ignore log files
+
+filter specific file
+[file's name with extension]
+
+to track an error.log although you are ignoring the .log files
+!error.log
+
+to ignore a directory in the actual folder (doesn't work if the directory is in other folder)
+/[folder's name]
+
+ignore all files in the directory
+[directory name]/
+
+ignore an extension in a directory but not in the subdirs
+[folder's name]/*.[extension]
+
+ignore an extension in a directory, including the subdirs
+[folder's name]/**/*.[extension]

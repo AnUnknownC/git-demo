@@ -1,0 +1,18 @@
+blob= binary large objects
+--[word] = flag
+sha1= an object translated to a hash
+git show -s --pretty=raw [commit hash]=m show you detailed information about the commitment
+git ls-tree [tree hash] //Blob in the tree
+
+- Undo comms:
+git checkout [filename] //Undo specific file
+git checkout . //Undo all the files in the folder
+git clean -xdf //Delete files that are not in the repository, -x= ignore aplicable rules to the files, -d= remove directories
+	       //related, -f= force command 
+git reset HEAD~n //n = ammount of commits that you want to go back in a commit
+git reset //as the steps to push a commit is add-commit-push the reset comm help to undone an n amount of steps
+	  //f.e.: --soft you go back one step (commit to add, push to commit), --mixed let you go the start, 
+	  //--hard delete the latest changes and cannot undone this command 
+
+git revert [first 5 commit hash's chars] -> write the commit message (optional) -> press ESC, type "wq" and press Enter
+* if instead wq type q! then won't perform the revert 
