@@ -9,4 +9,8 @@ Shields by shields
 Changes commited by the feature branch
 More
 
+<<<<<<< HEAD
 Change to commit
+=======
+Change 2
+>>>>>>> feature
