@@ -6,5 +6,18 @@ on this their chosen battle field
 Form the lines
 Shields by shields
 
+<<<<<<< HEAD
 this text will be added in the branch 
 Bruh
+=======
+Changes commited by the feature branch
+More
+
+<<<<<<< HEAD
+Change to commit
+=======
+Change 2
+>>>>>>> feature
+
+Changes for a tag 
+>>>>>>> 538e6a89343cd41b7d8dfdab31f9eda0f2d20806
