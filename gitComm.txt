@@ -7,8 +7,8 @@ git ls-tree [tree hash] //Blob in the tree
 - Undo comms:
 git checkout [filename] //Undo specific file
 git checkout . //Undo all the files in the folder
-git clean -xdf //Delete files that are not in the repository, -x= ignore aplicable rules to the files, -d= remove directories
-	       //related, -f= force command 
+git clean -xdf //Delete files that are not in the repository, -x= ignore aplicable rules to the files, -d= remove 
+	       //directories related, -f= force command 
 git reset HEAD~n //n = ammount of commits that you want to go back in a commit
 git reset //as the steps to push a commit is add-commit-push the reset comm help to undone an n amount of steps
 	  //f.e.: --soft you go back one step (commit to add, push to commit), --mixed let you go the start, 
@@ -16,3 +16,9 @@ git reset //as the steps to push a commit is add-commit-push the reset comm help
 
 git revert [first 5 commit hash's chars] -> write the commit message (optional) -> press ESC, type "wq" and press Enter
 * if instead wq type q! then won't perform the revert 
+
+The rebase comm can be used to set the changes in a branch keeping the time that the commits were done. 
+The Golden Rule with rebasing is that you can only used it in minimum impact and your own branches, as it pushes 
+the commits in its own chronological order and changes the files without keeping the changes made before them.
+
+With Cherry-pick you can take one or more commits from a branch and place it in your actual one 

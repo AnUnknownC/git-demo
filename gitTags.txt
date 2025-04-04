@@ -1,0 +1,4 @@
+git tag ver1 //Mark commit with tag
+git tag -list //View tags
+git push --tags //Push tags
+git checkout ver1 //Check a tag
