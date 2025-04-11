@@ -22,3 +22,19 @@ The Golden Rule with rebasing is that you can only used it in minimum impact and
 the commits in its own chronological order and changes the files without keeping the changes made before them.
 
 With Cherry-pick you can take one or more commits from a branch and place it in your actual one 
+
+If you has made some changes in a branch and have to change to another one but dont want to lose those changes without
+committing then you can use stash. Here are the commands to keep in mind:
+- git stash save [description] //Save working directory
+- git stash list //View stashes
+To bring them back
+- git stash pop [Stash name]//and remove from stash
+- git stash apply [Stash name]//keep the stash
+git stash drop [Stash name]//Remove the stash without using it 
+
+To change the Github repository to sync with exist the remote comms:
+- git remote add [branch name] [URL] //Add the repository to the path in the git
+				     //project
+- git remote remove [branch name]//Delete path
+- git remote -v //Show all the available paths and their command to interact with
+		//them
